@@ -1,4 +1,4 @@
-Module.register("MMM-MyGarbage", {
+Module.register("MMM-MyGarbarge", {
   // Default module config.
   defaults: {
     updateInterval: 3600000, // 1 hour in milliseconds
