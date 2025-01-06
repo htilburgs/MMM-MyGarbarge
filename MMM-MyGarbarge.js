@@ -32,7 +32,9 @@ Module.register("MMM-MyGarbarge", {
       wrapper.innerHTML = "Loading...";
       return wrapper;
     }
-
+    this.loaded = true;
+    console.log(JSON.stringify(pickupData));
+    
     if (this.pickupData && this.pickupData.length > 0) {
       const list = document.createElement("ul");
       this.pickupData.forEach((entry) => {
