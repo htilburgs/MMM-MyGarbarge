@@ -22,7 +22,7 @@ module.exports = NodeHelper.create({
         } catch (e) {
           console.log("Error parsing data", e);
         }
-        console.log(jsonData);
+        console.log(e);
       });
     }).on("error", (err) => {
       console.log("Error: " + err.message);
