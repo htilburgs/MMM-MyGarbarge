@@ -23,6 +23,7 @@ Module.register("MMM-MyGarbarge", {
     this.loaded = true;
     this.pickupData = pickupData;
     this.updateDom();
+    console.log(JSON.stringify(pickupData));
   },
 
   getDom: function () {
@@ -32,8 +33,6 @@ Module.register("MMM-MyGarbarge", {
       wrapper.innerHTML = "Loading...";
       return wrapper;
     }
-    this.loaded = true;
-    console.log(JSON.stringify(pickupData));
     
     if (this.pickupData && this.pickupData.length > 0) {
       const list = document.createElement("ul");
