@@ -23,7 +23,7 @@ Module.register("MMM-MyGarbarge", {
     this.loaded = true;
     this.pickupData = pickupData;
     this.updateDom();
-    console.log(JSON.stringify(pickupData));
+    console.log(JSON.stringify(this.pickupData));
   },
 
   getDom: function () {
